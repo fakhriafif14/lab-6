@@ -93,3 +93,24 @@ def tambah():
     kembali = input('Kembali [Enter]')
     menu()
 ```
+berikut ketika tampilan program di jalankan
+![gambar](ss58.png)
+
+code di bawah adalah untuk membuat fungsi tampilan yang ada di dalam program ini
+``` python
+def tampilkan():
+    system('cls')
+    judul()
+
+    for i in range(len(s_nim)):
+
+        print('%d. Nama         : %s'%(i+0, s_nama[i]))
+        print('    NIM          : %s'%s_nim[i])
+        print('    Nilai Tugas  : %.2f'%s_tugas[i])
+        print('    UTS          : %.2f'%s_uts[i])
+        print('    UAS          : %.2f'%s_uas[i])
+        print('    Nilai Akhir  : %.2f'%s_akhir[i])
+        print('-----------------------------')
+    kembali = input('Kembali Tekan [Enter]')
+    menu() ```
+berikut tampilan ketika program di jalanlankan
