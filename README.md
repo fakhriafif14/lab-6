@@ -58,3 +58,38 @@ def menu():
         system('cls')
         menu()
 ```
+berikut tampilan ketika program di jalankan 
+![gambar](ss57.png)
+dengan ketentuan jika kita menekan angka 1 pada keyboard, maka akan menambah data, dan angka 2 akan menampilkan data, angka 3 akan meng-ubah data (nama), dan angka 4 akan menghapus data yang kita inginkan
+
+<br>code dibawah untuk membuat fungsi tambah yang ada dalam program ini
+``` python
+def tambah():
+    system('cls')
+    judul()
+    print('Tambah Data'.center(40))
+    print('==================================')
+    nama = input('Nama     : ')
+    s_nama.append(nama)
+    nim = input('NIM       : ')
+    s_nim.append(nim)
+
+    system('cls')
+    judul()
+    print('Tambah Data'.center(40))
+    print('==================================')
+    tugas = float(input('Nilai Tugas    : '))
+    s_tugas.append(tugas)
+
+    uts = float(input('Nilai UTS        : '))
+    s_uts.append(uts)
+
+    uas = float(input('Nilai UAS        : '))
+    s_uas.append(uas)
+
+    total = tugas * 0.30 + uts * 0.35 + uas * 0.35
+    s_akhir.append(total)
+    print('Data Tersimpan'.center(40))
+    kembali = input('Kembali [Enter]')
+    menu()
+```
