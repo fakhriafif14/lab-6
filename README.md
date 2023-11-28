@@ -112,5 +112,56 @@ def tampilkan():
         print('    Nilai Akhir  : %.2f'%s_akhir[i])
         print('-----------------------------')
     kembali = input('Kembali Tekan [Enter]')
-    menu() ```
+    menu()
+```
+
 berikut tampilan ketika program di jalanlankan
+
+![gambar](ss59.png)
+
+<br>Code dibawah adalah untuk membuat fungsi merubah nama pada program ini, dengan ketentuan jika kita menekan angka 3 pada keyboard, maka akan muncul konfirmasi dan mengharuskan kita untuk menekan huruf B pada keyboard, dan setelah itu juga kita akan di haruskan menginputkan nomor urut list yang ada di program yang telah kita tampung, dan list tersebut dimulai dengan angka 0 adalah untuk list pertama, dan seterusnya
+```python
+def ubah():
+    rubah = input('Ubah Biodata Tekan [B]   : ')
+    if rubah == 'B' or rubah == 'b':
+        i = int(input('Masukkan Nomor Urut  : '))
+        if (i > len(s_nim[i])):
+            print('Nomor Urut Salah')
+        else:
+            namabaru = input('Nama      : ')
+            s_nama[i] = namabaru
+    kembali = input('Kembali Tekan [Enter]')
+    menu()
+```
+berikut tampilan ketika program dijalankan 
+![gambar](ss60.png)
+
+<br>berikut tampilan ketika program di jalankan , setelah adanya perubahan data pada nomor urut 0 dan penambahan data pana nomor urut 1
+
+![gambar](ss59.png)
+
+<br> Code dibawah adalah untuk membuat fungsi hapus data yang sudah tertampung di dalam program, sama hal nya dengan fungsi ubah, kita harus memasukkan nomor urut list data yang ada di dalam program, yang kemudian akan di eksekusi penghapusan data. jika nomor urut yang kita inputkan ternyata tidak ada di dalam program, maka akan muncul peringatan NIM Tidak Ada.
+```python
+def hapus():
+    system('cls')
+    judul()
+    print('Hapus Data'.center(40))
+    print('=================================')
+    i = int(input('Masukkan Nomor Urut  : '))
+
+    if (i > len(s_nim[i])):
+        tidak = input('NIM Tidak Ada')
+        hapus()
+    
+    else:
+        s_nim.remove(s_nim[i])
+        s_nama.remove(s_nama[i])
+        s_tugas.remove(s_tugas[i])
+        s_uts.remove(s_uts[i])
+        s_uas.remove(s_uas[i])
+        s_akhir.remove(s_akhir[i])
+
+    print('Data Berhasil Di Hapus')
+    kembali = input('Kembali Tekan [Enter]')
+    menu()
+```
