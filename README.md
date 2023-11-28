@@ -136,7 +136,7 @@ def ubah():
 berikut tampilan ketika program dijalankan 
 ![gambar](ss60.png)
 
-<br>berikut tampilan ketika program di jalankan , setelah adanya perubahan data pada nomor urut 0 dan penambahan data pana nomor urut 1
+<br>berikut tampilan ketika program di jalankan , setelah adanya perubahan data pada nomor urut 0 dan penambahan data pada nomor urut 1
 
 ![gambar](ss59.png)
 
@@ -165,3 +165,19 @@ def hapus():
     kembali = input('Kembali Tekan [Enter]')
     menu()
 ```
+berikut tampilan program ketika dijalankan
+![gambar](ss61.png)
+
+<br>berikut tampilan ketika program dijalankan, dan menghapus data pada nomor urut 0 maka akan menghasilkan tampilan seperti dibawah
+![gambar](ss62.png)
+
+<br> Code dibawah untuk fungsi pilihan selesai, jika kita sudah selesai, dan menekan angka 5 pada keyboard sesuai ketentuan pada fungsi menu, maka akan menyelesaikan program, tetapi tidak akan menutup program
+
+```python
+def selesai():
+    system('cls')
+    menu()
+
+menu()
+```
+# Sekian praktikum function pada python ini di buat, Terima kasih
